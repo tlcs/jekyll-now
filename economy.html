@@ -1,1 +1,385 @@
-a
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Inny Wykop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <style>
+    .topic {margin-top: 40px;}
+    .article-link {margin: 10px 5px 10px 5px;}
+    .source {font-size: 12px; color: 999px;}
+    .diggs {color: black; margin-right:50px;}
+    tr { height: 40px;}
+
+    .active >a {
+      font-weight: 900;
+
+    }
+
+    .nav-link {
+      font-size: 22px;
+      font-family: sans-serif;
+
+    }
+
+    .bg-white {
+        background-color: #fff;
+    }
+
+    .shadow {
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    }
+
+    .rounded {
+      border-radius: 1.5px;
+    }
+
+    .new-article {
+      margin: 10px;
+    }
+
+    a {
+      color: black;
+
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
+<div class="jumbotron d-flex align-items-center" style ="background-color:white">
+  <div class="container">
+
+    <header class="bg-white shadow rounded">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+
+          <img src="curator2.png" width="100" height="100" class="d-inline-block align-top" alt="">
+          </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav  justify-content-center" >
+            <li class="nav-item taleb-politics">
+              <a class="nav-link" href="index.html">Politics <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="economy.html">Economy</a>
+            </li>
+            <li class="nav-item taleb-science">
+              <a class="nav-link" href="science.html">Science</a>
+            </li>
+            <li class="nav-item taleb-computersandtechnology">
+              <a class="nav-link" href="computersandtechnology.html">Computers & Tech</a>
+            </li>
+            <li class="nav-item taleb-nature">
+              <a class="nav-link" href="nature.html">Nature</a>
+            </li>
+            <li class="nav-item taleb-artandculture">
+              <a class="nav-link" href="artandculture.html">Art & Culture</a>
+            </li>
+            <li class="nav-item table-history">
+              <a class="nav-link disabled" href="#">History</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="jumbotron" style ="background-color:#d8d8d8">
+      
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-08/oil-crash-busted-a-broker-s-computers-and-inflicted-huge-losses"> Interactive Brokers users couldn’t trade when oil broke zero — "At midnight, Shah got the devastating news: he owed Interactive Brokers $9 million. He’d started the day with $77,000 in his account." </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">ft.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.ft.com/content/69dcb1d2-feb6-49ed-9840-0f74635cab52"> Swiss National Bank’s swollen balance-sheet poses risk to ‘credibility’ </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">wsj.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.wsj.com/articles/j-crew-files-for-bankruptcy-protection-reaches-debt-swap-deal-11588583196?mod=hp_lead_pos3"> J. Crew Files for Chapter 11 Bankruptcy Protection </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-health-coronavirus-usa-china/trump-administration-pushing-to-rip-global-supply-chains-from-china-officials-idUSKBN22G0BZ"> Trump administration pushing to rip global supply chains from China: officials </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | asia | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/health-coronavirus-india/delhi-imposes-70-corona-tax-on-alcohol-to-deter-large-crowds-idINKBN22H0NN"> Delhi imposes 70% 'corona tax' on alcohol to deter large crowds </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-air-france-klm-results/air-france-klm-loss-gives-first-taste-of-coronavirus-impact-idINKBN22J0IZ?il=0"> Air France-KLM loss gives first taste of coronavirus impact </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-apple-debt/apple-borrows-on-the-cheap-to-fund-buybacks-dividends-idUSKBN22H001"> Apple borrows on the cheap to fund buybacks, dividends: Apple Inc on Monday capitalized on the Federal Reserve's emergency measures in response to the coronavirus outbreak to issue its cheapest bonds in years, making it the latest blue-chip company to do so to fund stock buybacks and dividends. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-usa-economy/great-depression-like-us-job-losses-unemployment-rate-expected-in-april-idUSKBN22K0E1"> Great Depression-like U.S. job losses, unemployment rate expected in April </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-health-coronavirus-california-busines/open-for-lunch-california-counties-with-few-coronavirus-cases-re-start-their-economies-idINKBN22H15B?il=0"> Open for lunch: California counties with few coronavirus cases re-start their economies </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-mazda-loans/mazda-motor-seeks-2-8-billion-in-loans-to-ride-out-pandemic-source-idUSKBN22L0M6?il=0"> Mazda Motor seeks $2.8 billion in loans to ride out pandemic: source </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-usa-stocks-weekahead/wall-street-weekahead-u-s-data-deluge-to-underscore-divide-between-roaring-market-plunging-economy-idUSKBN22K24W"> Wall Street week ahead: U.S. data deluge to underscore divide between roaring market, plunging economy </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-health-coronavirus-california-books/pandemic-pushes-california-bookstores-to-find-innovative-ways-to-keep-customers-idINKBN22K18H?il=0"> Pandemic pushes California bookstores to find innovative ways to keep customers </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-j-crew-group-bankruptcy/j-crew-files-for-bankruptcy-as-preppy-retailer-succumbs-to-covid-19-fallout-idUSKBN22G0O4"> J. Crew files for bankruptcy as preppy retailer succumbs to COVID-19 fallout </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-global-markets/dollar-up-asian-stocks-slip-as-u-s-pins-blame-for-virus-on-china-idINKBN22G003?il=0"> Dollar up, Asian stocks slip as U.S. pins blame for virus on China </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-newzealand-economy-budget-business/most-new-zealand-businesses-to-reopen-if-restrictions-eased-next-week-idINKBN22J01W?il=0"> Most New Zealand businesses to reopen if restrictions eased next week </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-china-economy-trade/chinas-april-exports-unexpectedly-rise-but-outlook-still-grim-idINKBN22J0A6?il=0"> China's April exports unexpectedly rise but outlook still grim </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-phoenix-bankruptcy/commodities-trader-phoenix-goes-into-liquidation-due-to-coronavirus-documents-idUSKBN22K1N8"> Commodities trader Phoenix goes into liquidation due to coronavirus: documents </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-global-markets/global-stocks-fall-as-u-s-china-tensions-threaten-rebound-idINKBN22G003?il=0"> Global stocks fall as U.S.-China tensions threaten rebound </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-lord-taylor-liquidation-exclusive/exclusive-lord-taylor-to-liquidate-its-stores-as-soon-as-they-reopen-sources-idUSKBN22H2SJ"> Lord &amp; Taylor to liquidate its stores as soon as they reopen </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-health-coronavirus-eu-regulator/eu-securities-watchdog-warns-over-retail-market-in-pandemic-idINKBN22I1IE?il=0"> EU securities watchdog warns over retail market in pandemic </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-04/hertz-prepares-to-file-bankruptcy-if-monday-deadline-is-missed"> Hertz Prepares to File Bankruptcy If Monday Deadline Is Missed </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-09/tesla-will-move-headquarters-future-programs-to-texas-nevada"> Musk Threatens to Pull Tesla Out of California Over Shutdown </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-06/u-s-meat-workers-are-quitting-as-virus-ridden-plants-reopen"> American Meat Workers Are Starting to Quit With Plants Reopening </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/opinion/articles/2020-05-03/oil-s-recovery-from-coronavirus-could-take-decades-not-years"> Oil's Recovery Could Take Decades, Not Years | Or the industry might never fully rebound from the virus, leaving massive spare capacity all along the supply chain. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-04/hertz-prepares-to-file-bankruptcy-if-monday-deadline-is-missed?srnd=premium"> Hertz Rent a Car Prepares to File Bankruptcy If Monday Deadline Is Missed </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-06/temporary-coronavirus-layoffs-are-turning-permanent-around-u-s"> Temporary Coronavirus Layoffs Are Turning Permanent Around U.S. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/news/articles/2020-05-05/u-s-household-debt-reaches-yet-another-record-on-home-loans"> U.S. Household Debt Reaches Yet Another Record on Home Loans </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">wsj.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.wsj.com/articles/new-york-fed-paper-finds-pandemic-a-century-ago-fueled-nazi-rise-11588629945"> New York Fed Paper Finds Pandemic a Century Ago Fueled Nazi Rise </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">economist.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.economist.com/leaders/2020/05/07/the-market-v-the-real-economy"> The Economist, May 7 2020 edition: A dangerous gap. The market v the real economy. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">wsj.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.wsj.com/articles/businesses-struggle-to-lure-workers-away-from-unemployment-11588930202"> Employers struggle to lure Workers away from Expanded Unemployment Benefits </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">wsj.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.wsj.com/articles/the-mortgage-market-never-got-fixed-after-2008-now-its-breaking-again-11588977078?emailToken=8b4af17cf120c6a878d326c7828b1ff2XB0znIG1xUODtr2VI5AifQnXvKZrg19VwEmczD8xOQWATSFob0Im6Ee4vQCwV9ZCeypXECdWWylulCRQ3nRFRjMGZZMsqKMzLXzlVEdeLwwvlr5gfSCElwt8l23kvZFR3u1zvdLHGpeEah3ORq2yVA%3D%3D&amp;reflink=article_copyURL_share"> “The Mortgage Market Never Got Fixed After 2008. Now It’s Breaking Again.“ </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">economist.com | north america | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.economist.com/finance-and-economics/2020/05/02/why-the-unemployed-in-america-could-face-a-lost-decade"> Why the unemployed in America could face a lost decade </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">ft.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.ft.com/content/734e604b-93d9-43a6-a6ec-19e8b22dad3c"> BoE warns UK set to enter worst recession for 300 years </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">ft.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.ft.com/content/e486c1f4-05fc-4d5c-b7e5-246d4d2a7f2b"> Phoenix Commodities seeks debt restructuring after racking up $450m of currency hedge losses </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">economist.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.economist.com/leaders/2020/05/07/the-market-v-the-real-economy"> The Economist, May 7 2020 edn: A dangerous gap. The market v the real economy </a></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 2020-05-11-00-35-31 -->
+
+</body>
+
+</html>
