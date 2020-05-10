@@ -1,1 +1,785 @@
-a
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Inny Wykop</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <style>
+    .topic {margin-top: 40px;}
+    .article-link {margin: 10px 5px 10px 5px;}
+    .source {font-size: 12px; color: 999px;}
+    .diggs {color: black; margin-right:50px;}
+    tr { height: 40px;}
+
+    .active >a {
+      font-weight: 900;
+
+    }
+
+    .nav-link {
+      font-size: 22px;
+      font-family: sans-serif;
+
+    }
+
+    .bg-white {
+        background-color: #fff;
+    }
+
+    .shadow {
+      box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);
+    }
+
+    .rounded {
+      border-radius: 1.5px;
+    }
+
+    .new-article {
+      margin: 10px;
+    }
+
+    a {
+      color: black;
+
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
+<div class="jumbotron d-flex align-items-center" style ="background-color:white">
+  <div class="container">
+
+    <header class="bg-white shadow rounded">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+
+          <img src="curator2.png" width="100" height="100" class="d-inline-block align-top" alt="">
+          </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav  justify-content-center" >
+            <li class="nav-item taleb-politics">
+              <a class="nav-link" href="index.html">Politics <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item taleb-economy">
+              <a class="nav-link" href="economy.html">Economy</a>
+            </li>
+            <li class="nav-item taleb-science">
+              <a class="nav-link" href="science.html">Science</a>
+            </li>
+            <li class="nav-item taleb-computersandtechnology">
+              <a class="nav-link" href="computersandtechnology.html">Computers & Tech</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="nature.html">Nature</a>
+            </li>
+            <li class="nav-item taleb-artandculture">
+              <a class="nav-link" href="artandculture.html">Art & Culture</a>
+            </li>
+            <li class="nav-item table-history">
+              <a class="nav-link disabled" href="#">History</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <div class="jumbotron" style ="background-color:#d8d8d8">
+      
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vegnum.com</h6>
+          <h5 class="card-title"><a href="https://vegnum.com/bill-gates-thinks-that-the-1-should-foot-the-bill-to-combat-climate-change/"> Bill Gates thinks the 1% should foot the bill for renewable energy, and he's offering the first $2B. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vegnews.com</h6>
+          <h5 class="card-title"><a href="https://vegnews.com/2020/5/elizabeth-warren-backs-cory-booker-s-bill-to-shut-down-factory-farms"> Elizabeth Warren Backs Cory Booker’s Bill to Shut Down Factory Farms </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">sciencealert.com</h6>
+          <h5 class="card-title"><a href="https://www.sciencealert.com/so-i-don-t-want-to-alarm-anyone-but-a-huge-amount-of-siberia-is-on-fire"> We Don't Want to Alarm Anyone, But a Large Amount of Siberia Is on Fire Right Now </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">cntraveler.com</h6>
+          <h5 class="card-title"><a href="https://www.cntraveler.com/story/im-a-park-ranger-and-im-worried-about-the-future-of-national-parks"> I'm a Park Ranger and I'm Worried About the Future of National Parks </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">worldanimalnews.com</h6>
+          <h5 class="card-title"><a href="https://worldanimalnews.com/breaking-colorado-approves-a-ban-on-wildlife-killing-contests-saving-the-lives-of-bobcats-coyotes-other-fur-bearing-species/"> Colorado Approves A Ban On Wildlife Killing Contests Saving The Lives Of Bobcats, Coyotes, &amp; Other Fur-Bearing Species </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">biologicaldiversity.org</h6>
+          <h5 class="card-title"><a href="https://biologicaldiversity.org/w/news/press-releases/colorado-bans-cruel-wildlife-killing-contests-2020-05-01/?utm_source=eeo&amp;utm_medium=email&amp;utm_campaign=eeo1035&amp;utm_term=Wildlife&amp;emci=b7b6899e-c58f-ea11-86e9-00155d03b5dd&amp;emdi=ea154796-8c90-ea11-86e9-00155d03b5dd&amp;ceid=1823627"> Colorado Bans Cruel Wildlife-killing Contests: State Joins Five Others That Prohibit Competitive Killing of Coyotes, Foxes and More for Prizes </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">foodandwaterwatch.org</h6>
+          <h5 class="card-title"><a href="https://www.foodandwaterwatch.org/news/covid-19-pandemic-shows-banning-factory-farms-more-important-ever?ms=some_tw_05012020_factory-farming-webinar&amp;oms=some_tw_05012020_factory-farming-webinar"> The COVID-19 Pandemic Shows Banning Factory Farms Is More Important Than Ever </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">news.trust.org</h6>
+          <h5 class="card-title"><a href="https://news.trust.org/item/20200428190058-yx6u2"> Green stimulus: Pakistan sets virus-idled to work planting trees </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">sun-sentinel.com</h6>
+          <h5 class="card-title"><a href="https://www.sun-sentinel.com/local/broward/fl-ne-everglades-oil-drilling-deal-20200505-a2aq232m35h4ngx2gt2vlphv5m-story.html"> Land purchase finalized to prevent Everglades oil drilling. 20,000 acres in western Broward County Fl. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">in.reuters.com | north america | </h6>
+          <h5 class="card-title"><a href="https://in.reuters.com/article/us-health-coronavirus-recovery-investors/rich-nations-must-make-pandemic-recovery-plans-green-global-investors-idINKBN22G08Y?il=0"> Rich nations must make pandemic recovery plans green: global investors </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vox.com | </h6>
+          <h5 class="card-title"><a href="https://www.vox.com/future-perfect/2020/5/5/21247286/plant-based-meat-coronavirus-pandemic-impossible-burger-beyond"> Demand for meatless meat is skyrocketing during the pandemic </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">thehill.com | </h6>
+          <h5 class="card-title"><a href="https://thehill.com/policy/energy-environment/496059-court-vacates-nearly-300-oil-and-gas-leases-on-public-lands"> Court vacates nearly 300 oil and gas leases on public lands </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">solarpowerworldonline.com</h6>
+          <h5 class="card-title"><a href="https://www.solarpowerworldonline.com/2020/05/conservative-clean-energy-group-congress-clean-energy/"> Conservative clean energy group asks Congress to prioritize clean energy to stabilize economy </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">newsbreak.com | asia</h6>
+          <h5 class="card-title"><a href="https://www.newsbreak.com/news/0OxpokSt/pakistan-hired-63000-people-unemployed-by-covid-19-to-help-plant-10-billion-trees"> Pakistan hired 63,000 people, unemployed by COVID-19, to help plant 10 billion trees </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">oceana.org</h6>
+          <h5 class="card-title"><a href="https://oceana.org/blog/bp%E2%80%99s-deepwater-horizon-oil-spill-was-worse-originally-thought-study-shows?utm_campaign=enews&amp;utm_content=202004enewsUS&amp;utm_source=en&amp;utm_medium=email"> BP’s Deepwater Horizon oil spill was worse than originally thought, study shows </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">fastcompany.com | europe</h6>
+          <h5 class="card-title"><a href="https://www.fastcompany.com/90501791/the-netherlands-is-slashing-emissions-by-as-much-as-12-megatons-this-year-because-of-a-lawsuit"> The Netherlands is slashing emissions by as much as 12 megatons this year—because of a lawsuit. After losing a final appeal on a 2015 lawsuit, the Dutch government is being forced to invest billions to put itself on a path to be carbon neutral by 2050. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/08/sea-levels-could-rise-more-than-a-metre-by-2100-experts-say?CMP=twt_a-environment_b-gdneco"> Sea levels could rise more than a metre by 2100, experts say Oceans rising faster than previously thought, according to survey of 100 specialists </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">sciencealert.com</h6>
+          <h5 class="card-title"><a href="https://www.sciencealert.com/teeny-tiny-plastics-are-sinking-deep-into-the-ocean-to-where-life-is-abundant"> We only see about 1% of the plastic in the ocean. The rest breaks down to Microplastics and goes where life is. It gets circulated into the food supply and humans consume about a credit card worth of plastic every week. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theverge.com</h6>
+          <h5 class="card-title"><a href="https://www.theverge.com/21252174/heat-humidity-human-survival-climate-change-science-advances"> It’s already getting too hot and humid in some places for humans to survive - The Verge </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">worldanimalnews.com</h6>
+          <h5 class="card-title"><a href="https://worldanimalnews.com/breaking-humane-society-international-saves-70-dogs-from-south-korean-dog-meat-farm-helps-farmer-transition-to-growing-vegetables-instead/"> Humane Society International Saves 70 Dogs From South Korean Dog Meat Farm &amp; Helps Farmer Transition To Growing Vegetables Instead </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vegnum.com</h6>
+          <h5 class="card-title"><a href="https://vegnum.com/elizabeth-warren-and-cory-booker-join-forces-on-bill-to-ban-factory-farming/"> ELIZABETH WARREN AND CORY BOOKER JOIN FORCES ON BILL TO BAN FACTORY FARMING </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">nbcnews.com</h6>
+          <h5 class="card-title"><a href="https://www.nbcnews.com/news/world/billions-could-face-temperatures-inhospitable-life-next-50-years-study-n1201471?utm_source=fark&amp;utm_medium=website&amp;utm_content=link&amp;ICID=ref_fark"> Billions could face temperatures inhospitable to life in the next 50 years, study finds </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">newrepublic.com</h6>
+          <h5 class="card-title"><a href="https://newrepublic.com/article/157555/federal-reserve-accelerating-climate-crisis?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87354624&amp;_hsenc=p2ANqtz-8Mztjx3CcARAZBWl3lUS1ndwXn3b4aW1u5Xo7-cadH1K4CqmPLdcy9gi0I4ftagNtnBNBN&amp;utm_content=87354624&amp;utm_source=hs_email"> The Federal Reserve Is Accelerating the Climate Crisis | Bailing out money-losing fossil fuel companies is not sound economic policy. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theincentive.org</h6>
+          <h5 class="card-title"><a href="https://theincentive.org/2020/05/07/trump-administration-waiving-requirement-to-monitor-waterways-for-hazardous-weedkiller-proving-deadly-during-covid-19-pandemic/"> Trump Administration Waiving Requirement to Monitor Waterways for Hazardous Weedkiller Proving Deadly amid COVID-19 Pandemic </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theparagraphic.com</h6>
+          <h5 class="card-title"><a href="https://theparagraphic.com/sustainability/grow-food-anywhere-without-soil-and-95-less-water/"> Urban farmer shows how he grows fresh fruits and vegetables every day of the year using 95% less water and 90% less space than traditional agriculture </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">cleantechnica.com</h6>
+          <h5 class="card-title"><a href="https://cleantechnica.com/2020/05/02/city-of-houston-surprises-100-renewable-electricity-65-million-in-savings-in-7-years/"> City of Houston Surprises: 100% Renewable Electricity — $65 Million in Savings in 7 Years </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theheartysoul.com</h6>
+          <h5 class="card-title"><a href="https://theheartysoul.com/baby-tortoises-have-been-discovered-thriving-on-the-galapagos-island-of-pinzon/"> A Century Later, Baby Tortoises Have Been Discovered Thriving On the Galapagos Island of Pinzon </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">sputniknews.com</h6>
+          <h5 class="card-title"><a href="https://sputniknews.com/latam/202005031079184301-brazilian-mayor-begs-greta-thunberg-for-help-in-saving-amazon-protectors-from-covid-19/"> Brazilian Mayor Asks Greta Thunberg to 'Protect the Protectors' of the Amazon Amid Covid-19 Crisis </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/05/gas-stoves-air-pollution-environment?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87424542&amp;_hsenc=p2ANqtz--2d4L2VLSZ3MH8tbDFfkYeaY4ZtxLnVXt9me5uk58X6kuVrTUtVdGgz_K-SS5KqVlUPKlc&amp;utm_content=87424542&amp;utm_source=hs_email"> Gas stoves making indoor air up to five times dirtier than outdoor air, report finds | children in homes with gas stoves have a 42% higher chance of having asthma symptoms. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vice.com | </h6>
+          <h5 class="card-title"><a href="https://www.vice.com/en_us/article/n7wja8/the-pandemic-is-bringing-back-single-use-plastics-in-a-huge-way"> The Pandemic Is Bringing Back Single-Use Plastics In a Huge Way </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theincentive.org</h6>
+          <h5 class="card-title"><a href="https://theincentive.org/2020/05/08/trumps-environmental-protection-agency-denies-petition-to-limit-downwind-pollution-in-states-affected-by-covid-19/"> Trump’s Environmental Protection Agency Denies Petition To Limit Downwind Pollution in States Affected by COVID-19 </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">desmogblog.com</h6>
+          <h5 class="card-title"><a href="https://www.desmogblog.com/2020/05/03/keystone-xl-future-pipeline-permits"> Big Oil Fears Keystone XL Ruling Means End of Easy Pipeline Permits </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">newshub.co.nz</h6>
+          <h5 class="card-title"><a href="https://www.newshub.co.nz/home/politics/2020/05/coronavirus-greens-say-future-generations-will-pay-for-today-s-spending-so-spend-it-on-them.html"> NZ Greens say future generations will pay for today's spending, so spend it on them. Since it'll take a decade to pay back the borrowing we've done to get through the COVID-19 pandemic, the money should be spent fixing problems future generations will face </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">star-telegram.com</h6>
+          <h5 class="card-title"><a href="https://www.star-telegram.com/news/nation-world/national/article242499451.html"> Billions projected to suffer nearly unlivable heat in 2070 </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">oceana.org</h6>
+          <h5 class="card-title"><a href="https://oceana.org/blog/all-eyes-covid-trump-continues-his-environmental-assaults?utm_campaign=enews&amp;utm_content=202004enewsUS&amp;utm_source=en&amp;utm_medium=email"> With All Eyes On COVID, Trump Continues His Environmental Assaults </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">worldanimalnews.com | north america</h6>
+          <h5 class="card-title"><a href="https://worldanimalnews.com/breaking-washington-d-c-passes-law-to-ban-the-sale-of-ivory-bill-moves-to-congress-for-final-approval/"> Washington, D.C., Passes Law To Ban The Sale Of Ivory &amp; Rhino Horn; Bill Moves To Congress For Final Approval </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bbc.com | europe | </h6>
+          <h5 class="card-title"><a href="https://www.bbc.com/news/uk-scotland-highlands-islands-52565753?intlink_from_url=https://www.bbc.com/news/topics/clm1wxp533pt/animals&amp;link_location=live-reporting-story"> Microplastics found in 150-year-old ocean sediment </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">harvardpolitics.com</h6>
+          <h5 class="card-title"><a href="https://harvardpolitics.com/united-states/rather-than-cull-millions-of-livestock-lets-end-animal-agriculture/"> Rather than Cull Millions of Livestock, Let’s End Animal Agriculture </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">abqjournal.com</h6>
+          <h5 class="card-title"><a href="https://www.abqjournal.com/1450265/epa-is-shirking-its-duty-during-current-crisis-ex-cutting-corners-on-environmental-safeguards-should-not-be-tolerated-in-nm.html?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87424542&amp;_hsenc=p2ANqtz--SefjT-YIRjZDMZ3tcR55v7ooupabRs4mRsW2toxw9W9ScXzPYr-QieYkokM2yXHExlB5X&amp;utm_content=87424542&amp;utm_source=hs_email"> EPA is shirking its duty during current crisis- The last thing our strapped medical institutions and personnel need is increased pollution directly impacting respiratory health, as oil and gas emissions do. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">momscleanairforce.org</h6>
+          <h5 class="card-title"><a href="https://www.momscleanairforce.org/wheelers-voodoo-mercury-accounting/?utm_id=1588350630&amp;utm_medium=email&amp;utm_campaign=mcaf_none_upd_mcaf&amp;email_variant=&amp;utm_source=moms-clean-air-force&amp;isc=&amp;wave_code=&amp;contact_channel=email"> EPA Adminstrator Andrew Wheeler Chooses Money Over Public Health </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">watoday.com.au</h6>
+          <h5 class="card-title"><a href="https://www.watoday.com.au/politics/federal/investors-urge-governments-to-go-green-for-coronavirus-recovery-20200504-p54pmu.html"> "Economic recovery plans that exacerbate climate change would expose investors and national economies to escalating financial, and social risks in the coming years," said a statement from the Investor Agenda group - investors whose members hold more than US$80 trillion under management. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">thehill.com | </h6>
+          <h5 class="card-title"><a href="https://thehill.com/homenews/campaign/496352-progressive-group-renews-push-to-oust-larry-summers-from-biden-campaign?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87567112&amp;_hsenc=p2ANqtz-95Hp5vzsRjqWZzmsP9sBPN0giKgrJ8sfBxw5wZck_BecplVpLz73oZAqDEgXQgXgLzs99r&amp;utm_content=87567112&amp;utm_source=hs_email"> Progressive groups renew push to oust Larry Summers from Biden campaign citing environmental concerns </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/04/nsw-and-queensland-coal-industry-uses-as-much-water-as-all-sydney-households-report-finds"> NSW and Queensland coal industry uses as much water as all Sydney households, report finds </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">mnn.com</h6>
+          <h5 class="card-title"><a href="https://www.mnn.com/earth-matters/wilderness-resources/stories/rebel-botanists-use-sidewalk-chalk-help-people-connect-nature"> 'Rebel botanists' use sidewalk chalk to help people connect with nature </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">news.mongabay.com | south america</h6>
+          <h5 class="card-title"><a href="https://news.mongabay.com/2020/05/brazil-sacks-officials-who-curbed-deforestation-on-amazon-indigenous-lands/"> Brazil sacks officials who curbed deforestation on Amazon indigenous lands </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">azcentral.com</h6>
+          <h5 class="card-title"><a href="https://www.azcentral.com/story/opinion/op-ed/2020/05/07/trump-using-pandemic-allow-grand-canyon-uranium-mining/3087095001/"> Trump is using a pandemic to weaken environmental law. First victim: The Grand Canyon </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/01/fossil-fuel-firms-coronavirus-package-aid?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87354624&amp;_hsenc=p2ANqtz-8Ru-bR4yZe_5dmc9Bn8AtE1Y94bTyHlROXnOJbSXrDvGis8EaX2iOkNqzsCy9SPwiwGweT&amp;utm_content=87354624&amp;utm_source=hs_email"> Fossil fuel firms linked to Trump get millions in coronavirus small business aid </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">insideclimatenews.org</h6>
+          <h5 class="card-title"><a href="https://insideclimatenews.org/news/04052020/hot-climate-niches-50-years-human-population?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87424542&amp;_hsenc=p2ANqtz--GV6BOO98wG_1V4GUGPpxWm-aW8K5KKmSp_qUTnKMnNbfKkXRFy1aIrnpT2dosa4wvX2nN&amp;utm_content=87424542&amp;utm_source=hs_email"> 50 Years From Now, Many Densely Populated Parts of the World Could be Too Hot for Humans | Unless steps are taken to check global warming, up to 3 billion people will find themselves in areas too warm for human comfort, a new study finds. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">news.mongabay.com</h6>
+          <h5 class="card-title"><a href="https://news.mongabay.com/2020/05/authorities-seize-record-26-tons-of-illegal-shark-fins-in-hong-kong/"> Record 26 tons of shark fins seized in Hong Kong </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/07/world-cannot-return-to-business-as-usual-after-covid-19-say-mayors"> World cannot return to 'business as usual' after Covid-19, say mayors putting climate action at centre of recovery plans </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">thehill.com | </h6>
+          <h5 class="card-title"><a href="https://thehill.com/policy/energy-environment/496263-legislation-aims-to-preclude-fossil-fuel-companies-from-receiving?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87495117&amp;_hsenc=p2ANqtz--NP_GCIkhP9KlmNCOr7I3U4TzEuNEuBmarxU6QpD3AHIs-NyM1UXQFJDRQPYtibyy8_-vV&amp;utm_content=87495117&amp;utm_source=hs_email"> Legislation aims to block fossil fuel companies from receiving coronavirus aid </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vice.com | </h6>
+          <h5 class="card-title"><a href="https://www.vice.com/en_us/article/v7g4w3/millions-in-small-business-coronavirus-bailout-loans-are-going-to-oil-and-gas-companies"> At Least $72 Million in Coronavirus Bailout Loans Went to Big Oil and Gas Companies: At least 16 drillers, fuel transporters, oil technology firms and service providers tapped the Small Business Association’s Paycheck Protection Program. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">oceana.org</h6>
+          <h5 class="card-title"><a href="https://oceana.org/blog/climate-change-hurting-ocean-ocean-fighting-back?utm_campaign=enews&amp;utm_content=202004enewsUS&amp;utm_source=en&amp;utm_medium=email"> Climate change is hurting the ocean, but the ocean is fighting back </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">advances.sciencemag.org</h6>
+          <h5 class="card-title"><a href="https://advances.sciencemag.org/content/6/19/eaaw1838"> Study finds Intolerable bouts of extreme humidity and heat which could threaten human survival are on the rise across the world, suggesting that worst-case scenario warnings about the consequences of global heating are already occurring. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">reuters.com | </h6>
+          <h5 class="card-title"><a href="https://www.reuters.com/article/us-brazil-environment-idUSKBN22K1U1"> Deforestation in Brazil's Amazon surges, Bolsonaro readies troops. In the first four months of the year, Amazon deforestation was up 55% from a year ago to 1,202 square kilometers (464 square miles) </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">labdownunder.com</h6>
+          <h5 class="card-title"><a href="https://labdownunder.com/renewables-and-electric-vehicles-switching-for-lower-costs/"> Transitioning the Australian grid to 100 per cent renewables and swapping all petrol cars for electric ones would drop annual electricity costs by over $1,000 per year for consumers, a new study has found. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">tonic75.com</h6>
+          <h5 class="card-title"><a href="https://tonic75.com/2474/teen-invents-plastic-that-decomposes-in-33-days/"> Teen invents “Plastic” that decomposes in 33 days </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">sunsetmagaz.in</h6>
+          <h5 class="card-title"><a href="http://sunsetmagaz.in/article/cM0s35"> Seattle is now closing 20 miles of streets to cars permanently after it initially did so to help people exercise while social distancing </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">missoulian.com</h6>
+          <h5 class="card-title"><a href="https://missoulian.com/opinion/columnists/time-for-the-forest-service-to-curtail-idahos-wolf-slaughter-in-wilderness/article_5ce54966-05f6-5a23-8ae7-2875de1ba048.html?eType=EmailBlastContent&amp;eId=4f906b31-4bde-4c2d-8234-94d69cf1171b"> Time for the Forest Service to curtail Idaho's wolf slaughter in wilderness </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">vegnum.com</h6>
+          <h5 class="card-title"><a href="https://vegnum.com/trump-continues-to-reverse-climate-protection-laws-in-the-middle-of-corona-crisis"> TRUMP CONTINUES TO REVERSE CLIMATE PROTECTION LAWS IN THE MIDDLE OF CORONA CRISIS </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">upworthy.com | asia</h6>
+          <h5 class="card-title"><a href="https://www.upworthy.com/pakistan-hires-63000-people-to-plant-10-billion-trees"> Pakistan hired 63,000 people, unemployed by COVID-19, to help plant 10 billion trees </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">thehill.com | </h6>
+          <h5 class="card-title"><a href="https://thehill.com/policy/energy-environment/496181-renewable-generation-surpasses-coal-for-40-straight-days"> Renewable energy topped coal in US for 40 days straight </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">thetreeapp.org</h6>
+          <h5 class="card-title"><a href="https://www.thetreeapp.org/"> In the UK, you can plant trees for free - NOW is the time when any of us can have a global impact, even from our sofa.. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/commentisfree/2020/may/07/michael-moore-far-right-climate-crisis-deniers-film-environment-falsehoods"> How did Michael Moore become a hero to climate deniers and the far right? | George Monbiot | Opinion </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/04/parallels-climate-coronavirus-obvious-emily-atkin-pandemic?CMP=twt_a-environment_b-gdneco"> Interview 'The parallels between coronavirus and climate crisis are obvious' </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">worldanimalnews.com | europe</h6>
+          <h5 class="card-title"><a href="https://worldanimalnews.com/after-more-than-14000-sheep-die-in-ship-tragedy-new-report-on-live-animal-transports-in-romania-reveals-massive-grievances/"> After More Than 14,000 Sheep Die In Romanian Ship Tragedy, New Report On Live Animal Transports Reveals Why Live Exports Must Be Banned Worldwide </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/04/parallels-climate-coronavirus-obvious-emily-atkin-pandemic?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87424542&amp;_hsenc=p2ANqtz-9_chEpSrQBOHFTtndYGTB6a160d403WbvgdB0-hxOWpaJJDsBD9fjoSd--90cH4x_GNOWH&amp;utm_content=87424542&amp;utm_source=hs_email"> 'The parallels between coronavirus and climate crisis are obvious'- “I’m sorry,” says Emily Atkin, not sounding very apologetic, “but if you still refuse to see parallels between climate change and coronavirus then honestly you’re just stupid.” </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">smithsonianmag.com</h6>
+          <h5 class="card-title"><a href="https://www.smithsonianmag.com/smart-news/lockdown-clears-skies-research-links-air-pollution-pandemics-death-toll-180974814/#.XrSqrXKabCw.reddit"> Air Pollution May Make COVID-19 Symptoms Worse </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">economo.co.uk | europe</h6>
+          <h5 class="card-title"><a href="http://www.economo.co.uk/environmental-activists-want-switzerland-to-promote-green-recovery/"> Environmental activists want Switzerland to promote “green recovery” </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | south america | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/world/2020/may/06/brazil-using-coronavirus-to-cover-up-assaults-on-amazon-warn-activists?CMP=twt_a-environment_b-gdneco"> Brazil using coronavirus to cover up assaults on Amazon, warn activists Fears for indigenous tribes as Jair Bolsonaro’s ‘land grabbers decree’ may be pushed forwards </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">yahoo.com</h6>
+          <h5 class="card-title"><a href="https://www.yahoo.com/news/returning-beachgoers-left-13-000-235230679.html"> Returning beachgoers left 13,000 pounds of trash on Florida's Cocoa Beach, prompting crackdown </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">orlandosentinel.com</h6>
+          <h5 class="card-title"><a href="https://www.orlandosentinel.com/news/environment/fl-ne-everglades-oil-drilling-deal-20200506-a2aq232m35h4ngx2gt2vlphv5m-story.html"> Deal finalized to prevent Everglades oil drilling </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">sciencetimes.com</h6>
+          <h5 class="card-title"><a href="https://www.sciencetimes.com/articles/25563/20200504/scientists-found-way-make-bricks-out-poop-reduce-biosolid-material.htm"> Scientists Found A Way to Make Bricks Out of Poop That Reduce Biosolid Material by 30% </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">news.mongabay.com | asia</h6>
+          <h5 class="card-title"><a href="https://news.mongabay.com/2020/04/manila-gets-its-skyline-back-as-air-quality-improves-amid-covid-19-lockdown"> Manila gets its skyline back as air quality improves amid COVID-19 lockdown </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">self.environment</h6>
+          <h5 class="card-title"><a href="https://www.reddit.com/r/environment/comments/gf903p/this_solar_cell_can_both_withstand_harsh/"> This solar cell can both withstand harsh environmental hazards and is 26.7% efficient in power conversion </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">weather.com</h6>
+          <h5 class="card-title"><a href="https://weather.com/news/climate/news/2020-05-07-extreme-heat-humidity-combinations-happening-now-climate-change"> Unsurvivable Heat Was Predicted to Blast Earth in the Future. Instead, It's Happening Now </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">theguardian.com | </h6>
+          <h5 class="card-title"><a href="https://www.theguardian.com/environment/2020/may/05/greta-thunberg-and-childrens-group-hit-back-at-attempt-to-throw-out-climate-case?utm_campaign=Hot%20News&amp;utm_medium=email&amp;_hsmi=87495117&amp;_hsenc=p2ANqtz-_qG2aRUTqVt2gPJ1eT2jHCmQiTWAGCeDF6or6Vqjmu3NL7WEo3DYMBUky7h6e_iXppZJxv&amp;utm_content=87495117&amp;utm_source=hs_email"> Greta Thunberg and children's group hit back at attempt to throw out climate case | Brazil, France and Germany say UN can’t hear complaint against five countries of flouting child rights to clean air </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">exeter.ac.uk | europe</h6>
+          <h5 class="card-title"><a href="http://www.exeter.ac.uk/news/homepage/title_794044_en.html"> ‘Near-unlivable’ heat for one-third of humans within 50 years if greenhouse gas emissions are not cut. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">thecorrespondent.com | north america</h6>
+          <h5 class="card-title"><a href="https://thecorrespondent.com/449/why-climate-change-is-a-pandemic-in-slow-motion-and-what-that-can-teach-us/59442751698-6f4701c1"> Why climate change is a pandemic in slow motion (and what that can teach us) </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">nytimes.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.nytimes.com/interactive/2020/climate/trump-environment-rollbacks.html?action=click&amp;module=News&amp;pgtype=Homepage"> The Trump Administration Is Reversing Nearly 100 Environmental Rules. Here’s the Full List. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">bloomberg.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.bloomberg.com/opinion/articles/2020-05-04/how-trump-s-epa-is-making-covid-19-more-deadly"> How Trump’s EPA Is Making Covid-19 More Deadly - A respiratory pandemic is no time to roll back air-pollution rules. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">washingtonpost.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.washingtonpost.com/weather/2020/05/04/human-climate-niche/?fbclid=IwAR038x7_gDmSwmGiStz_ntYyeVLZkx5ljN9pOg_J6UxdF42x600tdYpT-QE&amp;itid=hp_world1-8-12_climate-change-420pm%3Ahomepage%2Fstory-ans"> Global warming to push billions outside climate range that has sustained society for 6,000 years, study finds </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">nytimes.com | north america | limited access</h6>
+          <h5 class="card-title"><a href="https://www.nytimes.com/2020/05/02/us/asian-giant-hornet-washington.html"> ‘Murder Hornets’ in the U.S.: The Rush to Stop the Asian Giant Hornet </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">nytimes.com | limited access</h6>
+          <h5 class="card-title"><a href="https://www.nytimes.com/interactive/2020/climate/trump-environment-rollbacks.html"> The Trump Administration Is Reversing Nearly 100 Environmental Rules. Here’s the Full List. </a></h5>
+        </div>
+      </div>
+
+
+      <div class="card new-article">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted">wsj.com | subscription-only</h6>
+          <h5 class="card-title"><a href="https://www.wsj.com/articles/coronavirus-offers-a-clear-view-of-what-causes-air-pollution-11588498200"> Coronavirus Offers a Clear View of What Causes Air Pollution </a></h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- 2020-05-11-00-30-35 -->
+
+</body>
+
+</html>
